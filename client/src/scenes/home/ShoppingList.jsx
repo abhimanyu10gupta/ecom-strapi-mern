@@ -19,7 +19,7 @@ function ShoppingList() {
     
     async function getItems() {
         const items = await fetch(
-            "http://localhost:3001/api/items",
+            "https://ecom-mern-lq59.onrender.com/api/items",
             {method : "GET"}
         )
         const itemsJson = await items.json();

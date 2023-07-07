@@ -28,7 +28,7 @@ function Item({ item, width }) {
           alt={name}
           width="300px"
           height="400px"
-          src={`http://localhost:3001/assets/${picturePath}`}
+          src={`https://ecom-mern-lq59.onrender.com/assets/${picturePath}`}
           onClick={() => navigate(`/item/${_id}`)}
           style={{ cursor: "pointer" }}
         />

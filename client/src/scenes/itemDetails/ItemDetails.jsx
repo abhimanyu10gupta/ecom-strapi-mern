@@ -25,7 +25,7 @@ const ItemDetails = () => {
 
   async function getItem() {
     const item = await fetch(
-      `http://localhost:3001/api/items/${itemId}`,
+      `https://ecom-mern-lq59.onrender.com/api/items/${itemId}`,
       {
         method: "GET",
       }
@@ -36,7 +36,7 @@ const ItemDetails = () => {
 
   async function getItems() {
     const items = await fetch(
-      `http://localhost:3001/api/items`,
+      `https://ecom-mern-lq59.onrender.com/api/items`,
       {
         method: "GET",
       }
@@ -60,7 +60,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`http://localhost:3001/assets/${item?.picturePath}`}
+            src={`https://ecom-mern-lq59.onrender.com/assets/${item?.picturePath}`}
             style={{ objectFit: "contain" }}
           />
         </Box>

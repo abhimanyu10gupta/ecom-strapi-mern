@@ -79,7 +79,7 @@ function CartMenu() {
                                         alt={item.name}
                                         width="123px"
                                         height="164px"
-                                        src={`http://localhost:3001/assets/${item.picturePath}`}
+                                        src={`https://ecom-mern-lq59.onrender.com/assets/${item.picturePath}`}
                                         />
                                 </Box>
                                 <Box flex="1 1 60%">

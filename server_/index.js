@@ -24,7 +24,7 @@ app.use(
         useDefaults: false,
         directives: {
           defaultSrc: ["'self'"],
-          scriptSrc: ["'self'", "https://checkout.stripe.com", "https://js.stripe.com/v3", "https:", "'unsafe-inline'"],
+          scriptSrc: ["'self'", "https://checkout.stripe.com", "https://js.stripe.com/v3", "https:", "'unsafe-inline'", "https://ecom-mern-lq59.onrender.com"],
           objectSrc: ["'none'"],
           styleSrc: ["https:", "'unsafe-inline'", "http:"],
           fontSrc: ["https: ", "data:"],
@@ -40,7 +40,7 @@ app.use(bodyParser.json({limit: "30mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "30mb", extended: true}));
 app.use(cors(
     {
-        origin: ['http://localhost:3001']
+        origin: ['http://localhost:3001', "https://ecom-mern-lq59.onrender.com"]
     }
 ));
 
